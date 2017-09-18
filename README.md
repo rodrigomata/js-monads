@@ -16,6 +16,14 @@ const compositeSum = x => f(g(x));
 const example = compositeSum(2); // 5
 ```
 
+Eg2:
+```
+const append = x => y => x + y;
+
+const example = append('First, ')('Second');
+```
+
+
 2. Point-free style - The style of writing functions without mentioning their arguments, shorty, without using function or =>. This technique brings some benefits like less bugs, code being cleaner and easier to understand, and focuses more on the result rather than the process.
 Eg:
 ```
@@ -28,3 +36,5 @@ const minus = (x, y) => x - y;
 
 const currying = x => y => x - y;
 ```
+
+4. First-class functions - Functions that can be used as inputs to other functions, or return functions.
